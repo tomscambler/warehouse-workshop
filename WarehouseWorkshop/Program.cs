@@ -18,6 +18,8 @@ namespace WarehouseWorkshop
             };
 
             Warehouse amazon = new Warehouse("The Big Amazon Warehouse", stockList);
+            
+            amazon.transactionHistory = new List<Transaction>{};
 
             amazon.stockTake();
 
@@ -27,6 +29,7 @@ namespace WarehouseWorkshop
 
             amazon.stockTake();
 
+            amazon.transactionHistory.Add(myBasket.checkoutBasket());
         }
     }
 }

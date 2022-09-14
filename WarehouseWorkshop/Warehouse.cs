@@ -22,11 +22,9 @@ namespace WarehouseWorkshop
 
         public void completeTransaction(Transaction transaction)
         {
-            //check stock level
-            //check transaction id
-            //add transaction to transaction history
-            //modify stockList
+            transactionHistory.Add(transaction);
         }
+        
         public void stockTake()
         {
             Console.WriteLine($"The {WarehouseName} warehouse currently holds the following stock:\n");
